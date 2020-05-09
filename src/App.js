@@ -7,17 +7,29 @@ class App extends Component {
     super();
 
     this.state = {
-      string: 'Hello Kiki'
+      monsters: [
+        {
+          name: 'Frankenstein',
+          id: 'asd1'
+        },
+        {
+          name: 'Dracula',
+          id:'qwe3'
+        },
+        {
+          name: 'Zombie',
+          id: 'sge4'
+        }
+      ]
     };
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.state.string}</p>
-        </header>
+        {this.state.monsters.map(monster => (
+          <h1 key={monster.id}> {monster.name} </h1>
+        ))}
       </div>
     );
   }
