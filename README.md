@@ -15,4 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-
+### `npm run deploy`
+It will run predeploy and deploy script.<br />
+Open [https://kikipratiwi.github.io/monsters-rolodex/](https://kikipratiwi.github.io/monsters-rolodex/) to view deployment mode.
